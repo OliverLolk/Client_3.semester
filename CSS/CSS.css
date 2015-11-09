@@ -2,7 +2,7 @@ body {
     background-color: gray;
 }
 
-.login {
+.login, .register {
     padding: 40px;
     width: 274px;
     background-color: #F7F7F7;
@@ -12,14 +12,14 @@ body {
     overflow: hidden;
 }
 
-.login h1 {
+.login h1, .register h1 {
     font-weight: 100;
     text-align: center;
     font-family: Arial, sans-serif;
     color: green;
 }
 
-.login input[type=text], input[type=password]{
+.login input[type=text], input[type=password], .register input[type=text], input[type=email], input[type=password]{
     text-align: center;
     height: 20px;
     width: 75%;

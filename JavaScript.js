@@ -4,7 +4,7 @@
  */
 $(document).ready(function(){
 
-      $('#loginBtn').click(function() {
+      $('#loginBtn').click(function(){
 
           alert("tobias");
           });

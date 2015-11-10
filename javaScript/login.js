@@ -4,6 +4,7 @@
  */
 $(document).ready(function(){
 
+    var username
     $("#loginBtn").click(function(){
         alert('Please fill out all the fields');
         });

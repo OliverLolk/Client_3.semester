@@ -12,7 +12,6 @@ $(document).ready(function(){
         alert('Remember to fill out anything in the formular');
         });
 
-
 });
 
 

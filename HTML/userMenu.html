@@ -8,13 +8,17 @@
 
 <body>
     <div class="userMenu">
-        <ul>
-            <li id="newGame"><a href="newGame.html">New Game</a></li>
-            <li id="deleteGame"><a href="deleteGame.html">Delete Game</a></li>
-            <li id="showHighScore"><a href="showHighscore.html">Show Highscore</a></li>
-            <li id="Logout"><a href="">Logout</a></li>
-        </ul>
+        <div class="userMenuHeader">
+            <h1>Welcome "" to the snake game</h1>
+        </div>
+        <form>
+            <input type="button" id="newGame" value="New Game" class="button"/>
+            <input type="button" id="deleteGame" value="Delete Game" class="button"/>
+            <input type="button" id="showHighscore" value="Show Highscore" class="button"/>
+            <input type="button" id="logout" value="Logout" class="button"/>
+        </form>
     </div>
+
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="../javaScript/JavaScript.js" type="text/javascript"></script>

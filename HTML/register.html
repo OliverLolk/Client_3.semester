@@ -5,20 +5,25 @@
     <title>register</title>
     <link href="../CSS/CSS.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-<div class="register">
-<h1>Register now</h1>
-    <form>
-        <input type="text" placeholder="Firstname" id="firstName">
-        <input type="text" placeholder="Lastname" id="lastName">
-        <input type="text" placeholder="Username" id="userName">
-        <input type="password" placeholder="Password" id="passWord">
-        <input type="password" placeholder="confirm Password" id="confPassword">
-        <input type="email" placeholder="Email" id="email"> <br>
-        <input type="button" value="Back" onClick="history.go(-1);return true;">
-        <input type="submit" id="registerBtn" value="Register">
-    </form>
 
-</div>
+<body>
+    <div class="register">
+        <h1>Register now</h1>
+        <form>
+            <input type="text" placeholder="Firstname" id="firstName">
+            <input type="text" placeholder="Lastname" id="lastName">
+            <input type="text" placeholder="Username" id="userName">
+            <input type="password" placeholder="Password" id="passWord">
+            <input type="password" placeholder="confirm Password" id="confPassword">
+            <input type="email" placeholder="Email" id="email"> <br>
+            <input type="button" value="Back" onClick="history.go(-1);return true;">
+            <input name="Register" type="button" id="registerBtn" value="Register now" class="button"/>
+        </form>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../javaScript/JavaScript.js" type="text/javascript"></script>
+
 </body>
 </html>

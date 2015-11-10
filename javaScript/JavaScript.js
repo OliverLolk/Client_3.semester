@@ -4,10 +4,14 @@
  */
 $(document).ready(function(){
 
-      $("#loginBtn").click(function(){
+    $("#loginBtn").click(function(){
+        alert('Please fill out all the fields');
+        });
 
-          alert('Please fill out all the fields');
-          });
+    $("#registerBtn").click(function(){
+        alert('Remember to fill out anything in the formular');
+        });
+
 
 });
 

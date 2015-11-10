@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>userMenu</title>
-    <link href="../CSS/loginAndRegister.css" type="text/css" rel="stylesheet">
+    <link href="../CSS/userMenu.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
     <div class="userMenu">
-        <form>
-            <div>
-                <h1>Welcome "user" to the main menu</h1>
-            </div>
-            <div class="menuOptions">
-                <input name="newGame" type="button" id="newGameBtn" value="New game" class="button"/>
-                <input name="deleteGame" type="button" id="deleteGameBtn" value="Delete game" class="button"/>
-                <input name="showHighScore" type="button" id="highScoreBtn" value="Show Scores" class="button"/>
-                <input name="Logout" type="button" id="logoutBtn" value="Logout" class="button"/>
-            </div>
-            <div>
-                // IMAGE OF SOMETHING HERE!
-            </div>
-        </form>
+        <ul>
+            <li id="newGame"><a href="newGame.html">New Game</a></li>
+            <li id="deleteGame"><a href="deleteGame.html">Delete Game</a></li>
+            <li id="showHighScore"><a href="showHighscore.html">Show Highscore</a></li>
+            <li id="Logout"><a href="">Logout</a></li>
+        </ul>
     </div>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -30,4 +22,3 @@
 </body>
 </html>
 
-<!--onClick="history.go(-1);return true;"><-->

@@ -4,9 +4,9 @@
  */
 $(document).ready(function(){
 
-      $('#loginBtn').click(function(){
+      $("#loginBtn").click(function(){
 
-          alert("tobias");
+          alert('Please fill out all the fields');
           });
 
 });

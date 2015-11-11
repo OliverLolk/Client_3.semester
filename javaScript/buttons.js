@@ -14,4 +14,12 @@ $(document).ready(function(){
     $("#showHighscore").click(function(){
         window.location.href = "../HTML/showHighscore.html";
     });
+
+    $("#logout").click(function(){
+       window.location.href = "../HTML/login.html";
+    });
+
+    $("#registerBtn").click(function(){
+        window.location.href = "../HTML/register.html";
+    });
 });

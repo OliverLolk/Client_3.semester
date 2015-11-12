@@ -3,6 +3,10 @@
  */
 $(document).ready(function(){
 
+    $("#home").click(function(){
+        window.location.href = "../HTML/userMenu.html";
+    });
+
     $("#newGame").click(function() {
         window.location.href = "../HTML/newGame.html";
     });
@@ -16,7 +20,7 @@ $(document).ready(function(){
     });
 
     $("#logout").click(function(){
-       window.location.href = "../HTML/login.html";
+        window.location.href = "../HTML/login.html";
     });
 
     $("#registerBtn").click(function(){

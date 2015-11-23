@@ -2,41 +2,57 @@
 /**
  * Created by oliverlolk on 09/11/2015.
  */
-$(document).ready(function(){
+$(document).ready(function() {
 
-    $("#loginBtn").click(function(){
+    $("#loginBtn").click(function() {
 
-        var username = $("#Username").val();
-        var password = $("#Password").val();
+            var username = $("#Username").val();
+            var password = $("#Password").val();
 
-        if(username == "" && password == "") {
-            alert('Please remember to type both username and password');
-        }
-        else if(username == "Oliver" && password != "1234abcd") {
-            alert('Wrong password, try again');
-        }
-        else if(username != "Oliver" && password == "1234abcd") {
-            alert("something was wrong");
-        }
-        else if(username == "Oliver" && password == "1234abcd") {
-            window.location.href = "../HTML/userMenu.html";
+
+       console.log(username, password);
+
+        var loginData = {
+            username: username,
+            password: password
+        };
+
+        console.log(JSON.stringify(loginData));
+
+
+        if(username == "" && password == ""){
+            alert("Remember to type both username and password")
         }
 
+        else {
+            $.ajax({
+                async: true,
+                crossDomain: true,
+                type: "POST",
+                url: "http://localhost:20011/api/login/",
+                data: JSON.stringify(loginData),
+                success: function (data, status, xhr) {
+                    console.log(data, status, xhr);
+                    alert("You are now logged in");
+
+                    window.location.href ="../HTML/userMenu.html";
+                    },
+
+                error: function (err, status, xhr) {
+                    alert("Wrong Username or Password");
+                    console.log(err, status, xhr);
+                }
+
+            });
+
+        }
     });
-    //$("#registerBtn").click(function(){
-        //alert('Remember to fill out anything in the formular');
-        //});
-
 });
 
 
-$("#button").click(function () {
 
 
-    $.ajax({
-        type: "GET",
-        url: "http://localhost:9998/api/user",
-        success: function (msg) {
-            console.log(msg);
-        }
-    });
+
+
+
+

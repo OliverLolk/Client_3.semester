@@ -21,13 +21,13 @@ $(document).ready(function() {
 
 
         if(username == "" && password == ""){
-            alert("Remember to type both username and password")
+            alert("Fill in the login information")
         }
 
         else {
             $.ajax({
-                async: true,
-                crossDomain: true,
+                //async: true,
+                //crossDomain: true,
                 type: "POST",
                 url: "http://localhost:20011/api/login/",
                 data: JSON.stringify(loginData),

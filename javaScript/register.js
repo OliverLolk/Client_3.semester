@@ -27,12 +27,12 @@ $(document).ready(function(){
         console.log(JSON.stringify(registerData));
 
         if(firstName == "" && lastName == "" && username == "" && password == "" && email == "") {
-            alert("Fill out all the fields please")
+            alert("Remember to fill out all the fields")
         }
         else {
             $.ajax({
-                async: true,
-                crossDomain: true,
+                //async: true,
+                //crossDomain: true,
                 type: "POST",
                 url: "http://localhost:20011/api/users/",
                 data: JSON.stringify(registerData),

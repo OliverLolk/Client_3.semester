@@ -1,0 +1,16 @@
+.showScores {
+    display: block;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    overflow: auto;
+    width: auto;
+    margin-top: 10px;
+}
+.showScores th {
+    background-color: #b3e878;
+    color: white;
+    font-weight: normal;
+    padding: 10px 25px;
+    text-align: center;
+}

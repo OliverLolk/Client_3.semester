@@ -15,10 +15,6 @@ $(document).ready(function(){
         window.location.href = "../HTML/deleteGame.html";
     });
 
-    $("#showUsers").click(function(){
-        window.location.href = "../HTML/showUsers.html";
-    });
-
     $("#showHighscore").click(function(){
         window.location.href = "../HTML/showHighscore.html";
     });

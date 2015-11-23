@@ -23,7 +23,4 @@ $(document).ready(function(){
         window.location.href = "../HTML/login.html";
     });
 
-    $("#registerBtn").click(function(){
-        window.location.href = "../HTML/register.html";
-    });
 });

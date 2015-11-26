@@ -23,4 +23,12 @@ $(document).ready(function(){
         window.location.replace("../HTML/login.html");
     });
 
+    $("#createGame").click(function(){
+        window.location.href = "../HTML/createGame.html";
+    });
+
+    $("joinGame").click(function(){
+        window.location.href = "../HTML/joinGame.html";
+    });
+
 });

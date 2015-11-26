@@ -2,7 +2,7 @@ body {
     background-color: gray;
 }
 
-.login, .register {
+.login, .register, .createGame {
     padding: 40px;
     width: 274px;
     background-color: #F7F7F7;
@@ -10,16 +10,17 @@ body {
     border-radius: 2px;
     box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    background: url("img/snakeImage.jpg");
 }
 
-.login h1, .register h1 {
+.login h1, .register h1, .createGame h1 {
     font-weight: 100;
     text-align: center;
     font-family: Arial, sans-serif;
-    color: green;
+    color: white;
 }
 
-.login input[type=text], input[type=password], .register input[type=text], input[type=email], input[type=password]{
+.login input[type=text], input[type=password], .register input[type=text], input[type=email], input[type=password], .createGame input[type=text]{
     text-align: center;
     height: 20px;
     width: 75%;
@@ -27,4 +28,11 @@ body {
     border: 2px solid #d9d9d9;
     border-top: 2px solid #c0c0c0;
     background: #fff;
+    position: relative;
+    left: 30px;
+}
+
+.createGame input[type=button], .login input[type=button], .register input[type=button]{
+    position: relative;
+    left: 30px;
 }

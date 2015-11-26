@@ -1,0 +1,37 @@
+/**
+ * Created by oliverlolk on 26/11/2015.
+ */
+$(document).ready(function(){
+
+    $("#createBtn").click(function(){
+
+        var name = $("#gameName").val();
+        var mapsize = $("#mapSize").val();
+        var controls = $("#controls").val();
+
+        console.log(name, mapsize, controls);
+
+        var createGameData = {
+            name: name,
+            map_size: mapsize,
+            controls: controls
+        };
+
+        console.log(JSON.stringify(createGameData));
+
+
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:20011/api/games/",
+            data: JSON.stringify(createGameData),
+            success: function (data, status, xhr) {
+                console.log(data, status, xhr);
+            },
+
+            error: function (err, status, xhr) {
+                console.log(err, status, xhr);
+            }
+            });
+    });
+
+});

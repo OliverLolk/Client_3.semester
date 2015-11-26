@@ -29,9 +29,12 @@ $(document).ready(function() {
                 type: "POST",
                 url: "http://localhost:20011/api/login/",
                 data: JSON.stringify(loginData),
-                success: function (data, status, xhr) {
-                    console.log(data, status, xhr);
+                success: function (response, status, xhr) {
+                    console.log(response, status, xhr);
                     alert("You are now logged in");
+
+
+                    //$.sessionStorage.set("userid",response.userid);
 
                     window.location.href ="../HTML/userMenu.html";
                     },

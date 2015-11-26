@@ -6,15 +6,15 @@ $(document).ready(function(){
     $("#createBtn").click(function(){
 
         var name = $("#gameName").val();
-        var mapsize = $("#mapSize").val();
+        var mapSize = $("#mapSize").val();
         var controls = $("#controls").val();
 
-        console.log(name, mapsize, controls);
+        console.log(name, mapSize, controls);
 
         var createGameData = {
             name: name,
-            map_size: mapsize,
-            controls: controls
+            map_size: mapSize,
+            host_controls: controls
         };
 
         console.log(JSON.stringify(createGameData));

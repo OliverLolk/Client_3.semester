@@ -26,8 +26,6 @@ $(document).ready(function() {
 
         else {
             $.ajax({
-                //async: true,
-                //crossDomain: true,
                 type: "POST",
                 url: "http://localhost:20011/api/login/",
                 data: JSON.stringify(loginData),

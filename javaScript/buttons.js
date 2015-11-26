@@ -7,16 +7,16 @@ $(document).ready(function(){
         window.location.href = "../HTML/userMenu.html";
     });
 
-    $("#newGame").click(function() {
-        window.location.href = "../HTML/newGame.html";
+    $("#play").click(function() {
+        window.location.href = "../HTML/play.html";
     });
 
     $("#deleteGame").click(function(){
         window.location.href = "../HTML/deleteGame.html";
     });
 
-    $("#showHighscore").click(function(){
-        window.location.href = "../HTML/showHighscore.html";
+    $("#showHighscore").click(function() {
+        window.location.href = "../HTML/showScore.html";
     });
 
     $("#logout").click(function(){

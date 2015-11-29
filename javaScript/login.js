@@ -33,9 +33,7 @@ $(document).ready(function() {
                     console.log(response, status, xhr);
                     alert("You are now logged in");
 
-
-                    //$.sessionStorage.set("userid",response.userid);
-
+                    $.sessionStorage.set("Id", response.userid);
                     window.location.href ="../HTML/userMenu.html";
                     },
 

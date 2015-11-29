@@ -27,7 +27,7 @@ $(document).ready(function(){
         window.location.href = "../HTML/createGame.html";
     });
 
-    $("joinGame").click(function(){
+    $("#joinGame").click(function(){
         window.location.href = "../HTML/joinGame.html";
     });
 

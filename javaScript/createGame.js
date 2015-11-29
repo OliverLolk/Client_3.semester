@@ -13,8 +13,11 @@ $(document).ready(function(){
 
         var createGameData = {
             name: name,
-            map_size: mapSize,
-            host_controls: controls
+            mapSize: mapSize,
+            host : {
+                id : $.sessionStorage.get("Id"),
+                controls: controls
+            }
         };
 
         console.log(JSON.stringify(createGameData));

@@ -12,15 +12,27 @@
             <h1>Join Game </h1>
         </div>
     <div>
-        <p>Tables</p>
+        <table id="joinGame">
+            <tr>
+                <th>id</th>
+                <th>host</th>
+                <th>name</th>
+                <th>status</th>
+                <th>mapSize</th>
+                <th>created</th>
+            </tr>
+        </table>
     </div>
         <div>
-            <input type="text" placeholder="">
+            <input type="text" placeholder="Game Id" id="gameId"><br>
+            <input type="button" value="Back" onClick="history.go(-1);return true;">
+            <input name="joinGame" type="button" id="joinBtn" value="Join Game"/>
         </div>
     </form>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../javaScript/jquery.storageapi.min.js"></script>
 <script src="../javaScript/joinGame.js" type="text/javascript"></script>
 </body>
 </html>

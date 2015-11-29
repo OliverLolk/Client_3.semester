@@ -1,4 +1,4 @@
-.showScores {
+#showGames, #joinGame {
     display: block;
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -6,11 +6,16 @@
     overflow: auto;
     width: auto;
     margin-top: 10px;
+
 }
-.showScores th {
-    background-color: #b3e878;
+#showGames th, #joinGame th {
     color: white;
     font-weight: normal;
     padding: 10px 25px;
     text-align: center;
+    background-color: #5272ff;
+}
+
+#showGames tr, #joinGame tr {
+    background-color: #fdfff2;
 }

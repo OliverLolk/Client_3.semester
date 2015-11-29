@@ -30,6 +30,7 @@ $(document).ready(function(){
             success: function (data, status, xhr) {
                 console.log(data, status, xhr);
 
+                window.location.href = "../HTML/userMenu.html";
             },
 
             error: function (err, status, xhr) {

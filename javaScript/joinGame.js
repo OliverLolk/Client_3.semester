@@ -13,7 +13,7 @@ $(document).ready(function() {
             data.forEach(function (item) {
 
                 var table = '<tr><td>' + item.gameId + '</td><td>' + item.host.id + '</td><td>'
-                    + item.name + '</td><td>' + item.status + '</td><td>' + item.mapSize + '</td><td>'
+                    + item.name + '</td><td>' + item.mapSize + '</td><td>'
                     + item.created + '</td></tr>';
 
                 $('#joinGame').append(table);

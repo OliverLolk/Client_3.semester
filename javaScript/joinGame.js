@@ -27,12 +27,12 @@ $(document).ready(function() {
 
     $("#joinBtn").click(function () {
 
-        var gameId = $("#gameId").val();
+        var game = $("#gameId").val();
 
         console.log(gameId);
 
         var joinGameData = {
-            gameId: gameId,
+            gameId: game,
             opponent: {
                 id : $.sessionStorage.get("Id")
             }
@@ -46,8 +46,8 @@ $(document).ready(function() {
             data: JSON.stringify(joinGameData),
             success:function(data, status, xhr) {
                 console.log(data, status, xhr);
-
-                aler("You have successfully joined the game")
+                alert("You have successfully joined the game");
+                $.sessionStorage.set("gameId", game);
 
                 window.location.href ="../HTML/startGame.html";
             },

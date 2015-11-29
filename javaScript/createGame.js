@@ -29,6 +29,7 @@ $(document).ready(function(){
             data: JSON.stringify(createGameData),
             success: function (data, status, xhr) {
                 console.log(data, status, xhr);
+
             },
 
             error: function (err, status, xhr) {

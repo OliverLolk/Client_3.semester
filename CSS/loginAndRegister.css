@@ -2,7 +2,7 @@ body {
     background-color: gray;
 }
 
-.login, .register, .createGame, .joinGame, .startGame {
+.login, .register, .createGame, .startGame {
     padding: 40px;
     width: 274px;
     background-color: #F7F7F7;
@@ -13,7 +13,7 @@ body {
     background: url("img/snakeImage.jpg");
 }
 
-.login h1, .register h1, .createGame h1, .joinGame h1, .startGame h1 {
+.login h1, .register h1, .createGame h1, .startGame h1 {
     font-weight: 100;
     text-align: center;
     font-family: Arial, sans-serif;

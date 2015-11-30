@@ -1,0 +1,21 @@
+body {
+    background-color: gray;
+}
+
+.joinGame {
+    padding: 40px;
+    width: 460px;
+    background-color: #F7F7F7;
+    margin: 0 auto 10px;
+    border-radius: 2px;
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: url("img/snakeImage.jpg");
+}
+
+.joinGame h1 {
+    font-weight: 100;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}

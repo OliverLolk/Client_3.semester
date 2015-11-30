@@ -18,7 +18,7 @@ body {
     color: white;
 }
 
-.userMenu input {
+.userMenu input[class=button] {
     -moz-box-shadow:inset -11px 12px 16px -13px #3dc21b;
     -webkit-box-shadow:inset -11px 12px 16px -13px #3dc21b;
     box-shadow:inset -11px 12px 16px -13px #3dc21b;
@@ -74,3 +74,6 @@ body {
     color: white;
 }
 
+#deleteGameInput {
+    width: 80px;
+}

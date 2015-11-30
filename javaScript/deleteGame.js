@@ -3,8 +3,6 @@
  */
 $(document).ready(function(){
 
-
-
     $.ajax({
         type: "GET",
         url: "http://localhost:20011/api/games/host/" + $.sessionStorage.get("Id"),
@@ -24,5 +22,23 @@ $(document).ready(function(){
             console.log(err, status, xhr);
         }
 
+    });
+
+    $("#deleteBtn").click(function(){
+       var gameId = $("#deleteGameInput").val();
+
+        console.log(JSON.stringify(gameId));
+
+        $.ajax({
+           type: "DELETE",
+            url: "http://localhost:20011/api/games/" + $.sessionStorage.get("Id"),
+            data: JSON.stringify(gameId),
+            success: function (data, status, xhr) {
+                console.log(data, status, xhr);
+            },
+            error: function (err, status, xhr) {
+                console.log(err, status, xhr);
+            }
+        });
     });
 });
